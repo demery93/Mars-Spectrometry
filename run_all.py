@@ -2,17 +2,17 @@ import os
 import logging
 from config import config
 
-from preprocessing import process_and_concatenate, pivot_and_impute, process_and_concatenate_with_supplemental
+from preprocessing import process_and_concatenate, pivot_and_impute
 from postprocessing import average_predictions, median_predictions
 from base_model import generate_predictions
 
-RETRAIN = True
+RETRAIN = False
 VALIDATE = True
 
 if(VALIDATE):
     logging.basicConfig(format='%(asctime)s || %(levelname)s || %(message)s || %(lineno)d || %(process)d', filename='logs/log_validate.txt', filemode='w', level = logging.INFO)
 else:
-    logging.basicConfig(format='%(asctime)s || %(levelname)s || %(message)s || %(lineno)d || %(process)d', filename='logs/log.txt', filemode='w', level = logging.INFO)
+    logging.basicConfig(format='%(asctime)s || %(levelname)s || %(message)s || %(lineno)d || %(process)d', filename='logs/log_submission.txt', filemode='w', level = logging.INFO)
 
 
 abunds, temps = process_and_concatenate()

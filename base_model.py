@@ -5,9 +5,8 @@ import tensorflow as tf
 import gc
 
 from config import config
-from model import cnn, cnn_lstm, scheduler
+from model import cnn, scheduler
 from sklearn.metrics import log_loss
-import preprocessing
 import logging
 
 def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True, model_type='cnn'):
