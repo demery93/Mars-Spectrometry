@@ -1,0 +1,20 @@
+2022-04-04 10:31:33,851 || INFO || Initial files input and stacked || 19 || 9048
+2022-04-04 10:34:45,756 || INFO || Data pivoted and filled || 21 || 9048
+2022-04-04 10:44:38,782 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 80 ions: 0.133 || 74 || 9048
+2022-04-04 10:44:38,881 || INFO || Predictions generated for 2000 timesteps and 80 ions || 25 || 9048
+2022-04-04 10:54:21,187 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 100 ions: 0.127 || 74 || 9048
+2022-04-04 10:54:21,306 || INFO || Predictions generated for 2000 timesteps and 100 ions || 25 || 9048
+2022-04-04 11:04:19,405 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 120 ions: 0.13 || 74 || 9048
+2022-04-04 11:04:19,549 || INFO || Predictions generated for 2000 timesteps and 120 ions || 25 || 9048
+2022-04-04 11:15:24,355 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 80 ions: 0.13 || 74 || 9048
+2022-04-04 11:15:24,499 || INFO || Predictions generated for 3000 timesteps and 80 ions || 25 || 9048
+2022-04-04 11:26:58,394 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 100 ions: 0.129 || 74 || 9048
+2022-04-04 11:26:58,557 || INFO || Predictions generated for 3000 timesteps and 100 ions || 25 || 9048
+2022-04-04 11:38:19,192 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 120 ions: 0.126 || 74 || 9048
+2022-04-04 11:38:19,396 || INFO || Predictions generated for 3000 timesteps and 120 ions || 25 || 9048
+2022-04-04 11:51:03,718 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 80 ions: 0.128 || 74 || 9048
+2022-04-04 11:51:03,902 || INFO || Predictions generated for 4000 timesteps and 80 ions || 25 || 9048
+2022-04-04 12:03:56,159 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 100 ions: 0.125 || 74 || 9048
+2022-04-04 12:03:56,455 || INFO || Predictions generated for 4000 timesteps and 100 ions || 25 || 9048
+2022-04-04 12:16:57,325 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 120 ions: 0.137 || 74 || 9048
+2022-04-04 12:16:57,928 || INFO || Predictions generated for 4000 timesteps and 120 ions || 25 || 9048
