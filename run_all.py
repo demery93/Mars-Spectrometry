@@ -6,7 +6,7 @@ from preprocessing import process_and_concatenate, pivot_and_impute
 from postprocessing import average_predictions, median_predictions
 from base_model import generate_predictions
 
-RETRAIN = False
+RETRAIN = True
 VALIDATE = True
 
 if(VALIDATE):
@@ -19,10 +19,20 @@ abunds, temps = process_and_concatenate()
 logging.info("Initial files input and stacked")
 abunds_pvt, temps_pvt = pivot_and_impute(abunds, temps)
 logging.info("Data pivoted and filled")
-for timesteps in config.timesteps:
-    for nion in config.nions:
-        generate_predictions(abunds_pvt, temps_pvt, timesteps, nion, retrain=RETRAIN, validate=VALIDATE, model_type='cnn')
-        logging.info(f"Predictions generated for {timesteps} timesteps and {nion} ions")
+for kernel_width in config.kernel_width:
+    for input_smoothing in config.input_smoothing:
+        for timesteps in config.timesteps:
+            for nion in config.nions:
+                generate_predictions(abunds_pvt,
+                                     temps_pvt,
+                                     timesteps,
+                                     nion,
+                                     retrain=RETRAIN,
+                                     validate=VALIDATE,
+                                     model_type='cnn',
+                                     input_smoothing=input_smoothing,
+                                     kernel_width=kernel_width)
+                logging.info(f"Predictions generated for {timesteps} timesteps and {nion} ions with {input_smoothing} step smoothing and {kernel_width} kernel size")
 
 average_predictions()
 median_predictions()

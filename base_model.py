@@ -9,7 +9,7 @@ from model import cnn, scheduler
 from sklearn.metrics import log_loss
 import logging
 
-def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True, model_type='cnn'):
+def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True, model_type='cnn', input_smoothing=4, kernel_width=3):
     targets = pd.read_csv("input/train_labels.csv")
     val_targets = pd.read_csv("input/val_labels.csv")
     metadata = pd.read_csv("input/metadata.csv")
@@ -45,15 +45,15 @@ def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True
     for i in range(config.n_bags):
         print(f"Running model {i}")
 
-        model = cnn(timesteps, nions)
+        model = cnn(timesteps, nions, kernel_width=3, input_smoothing=6)
 
         if(retrain):
             model.fit(x_train, y_train,
                       epochs=20, batch_size=16,
                       validation_data=(x_val, y_val),
                       verbose=0, callbacks=callback)
-            model.save_weights(f"trained_models/{model_type}_{timesteps}_{nions}_{i}.h5")
-        model.load_weights(f"trained_models/{model_type}_{timesteps}_{nions}_{i}.h5")
+            model.save_weights(f"trained_models/{model_type}_{timesteps}_{nions}_{input_smoothing}_{kernel_width}_{i}.h5")
+        model.load_weights(f"trained_models/{model_type}_{timesteps}_{nions}_{input_smoothing}_{kernel_width}_{i}.h5")
 
         val_pred.append(model.predict(x_val))
         test_pred.append(model.predict(x_test))
@@ -76,4 +76,4 @@ def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True
     pred = pd.DataFrame(pred, columns = targetcols)
     pred['sample_id'] = metadata[metadata.split != 'train'].sample_id.values
     pred = pred[sub.columns]
-    pred.to_csv(f"output/submission_{timesteps}_{nions}.csv", index=False, header=True)
+    pred.to_csv(f"output/submission_{timesteps}_{nions}_{input_smoothing}_{kernel_width}.csv", index=False, header=True)
