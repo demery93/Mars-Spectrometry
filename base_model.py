@@ -45,7 +45,7 @@ def generate_predictions(df1, df2, timesteps, nions, retrain=True, validate=True
     for i in range(config.n_bags):
         print(f"Running model {i}")
 
-        model = cnn(timesteps, nions, kernel_width=3, input_smoothing=6)
+        model = cnn(timesteps, nions, kernel_width=kernel_width, input_smoothing=input_smoothing)
 
         if(retrain):
             model.fit(x_train, y_train,
