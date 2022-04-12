@@ -14,7 +14,7 @@ def main():
         score = log_loss(labels[target], val[target], eps=1e-7)
         scores.append(score)
 
-    print(f"Submission Score: {np.mean(scores)}")
+    print(f"Submission Score: {np.mean(scores)}") #Submission Score:  0.12214444100983654
 
 if __name__ == "__main__":
     main()

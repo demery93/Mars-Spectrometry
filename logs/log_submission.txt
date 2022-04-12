@@ -1,0 +1,38 @@
+2022-04-10 10:12:08,043 || INFO || Initial files input and stacked || 18 || 15832
+2022-04-10 10:15:28,824 || INFO || Data pivoted and filled || 20 || 15832
+2022-04-10 10:26:24,162 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 80 ions: 0.022 || 72 || 15832
+2022-04-10 10:26:24,274 || INFO || Predictions generated for 2000 timesteps and 80 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 10:37:14,082 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 100 ions: 0.027 || 72 || 15832
+2022-04-10 10:37:14,241 || INFO || Predictions generated for 2000 timesteps and 100 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 10:50:01,065 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 80 ions: 0.023 || 72 || 15832
+2022-04-10 10:50:01,223 || INFO || Predictions generated for 3000 timesteps and 80 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 11:03:02,473 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 100 ions: 0.03 || 72 || 15832
+2022-04-10 11:03:02,694 || INFO || Predictions generated for 3000 timesteps and 100 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 11:18:55,607 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 80 ions: 0.028 || 72 || 15832
+2022-04-10 11:18:55,806 || INFO || Predictions generated for 4000 timesteps and 80 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 11:35:05,581 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 100 ions: 0.031 || 72 || 15832
+2022-04-10 11:35:05,866 || INFO || Predictions generated for 4000 timesteps and 100 ions with 3 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 11:44:56,983 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 80 ions: 0.028 || 72 || 15832
+2022-04-10 11:44:57,089 || INFO || Predictions generated for 2000 timesteps and 80 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 11:54:54,752 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 100 ions: 0.03 || 72 || 15832
+2022-04-10 11:54:54,889 || INFO || Predictions generated for 2000 timesteps and 100 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 12:06:26,942 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 80 ions: 0.025 || 72 || 15832
+2022-04-10 12:06:27,098 || INFO || Predictions generated for 3000 timesteps and 80 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 12:18:13,611 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 100 ions: 0.03 || 72 || 15832
+2022-04-10 12:18:13,810 || INFO || Predictions generated for 3000 timesteps and 100 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 12:31:30,538 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 80 ions: 0.029 || 72 || 15832
+2022-04-10 12:31:30,829 || INFO || Predictions generated for 4000 timesteps and 80 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 12:45:12,420 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 100 ions: 0.031 || 72 || 15832
+2022-04-10 12:45:12,684 || INFO || Predictions generated for 4000 timesteps and 100 ions with 4 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 12:54:49,698 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 80 ions: 0.029 || 72 || 15832
+2022-04-10 12:54:49,854 || INFO || Predictions generated for 2000 timesteps and 80 ions with 5 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 13:04:30,451 || INFO || Mean Aggregated Logloss for bagged model with 2000 steps and 100 ions: 0.036 || 72 || 15832
+2022-04-10 13:04:30,641 || INFO || Predictions generated for 2000 timesteps and 100 ions with 5 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 13:15:03,543 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 80 ions: 0.028 || 72 || 15832
+2022-04-10 13:15:03,761 || INFO || Predictions generated for 3000 timesteps and 80 ions with 5 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 13:25:53,752 || INFO || Mean Aggregated Logloss for bagged model with 3000 steps and 100 ions: 0.035 || 72 || 15832
+2022-04-10 13:25:54,031 || INFO || Predictions generated for 3000 timesteps and 100 ions with 5 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 13:40:42,198 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 80 ions: 0.029 || 72 || 15832
+2022-04-10 13:40:42,449 || INFO || Predictions generated for 4000 timesteps and 80 ions with 5 step smoothing and 3 kernel size || 34 || 15832
+2022-04-10 13:53:34,745 || INFO || Mean Aggregated Logloss for bagged model with 4000 steps and 100 ions: 0.034 || 72 || 15832
+2022-04-10 13:53:35,023 || INFO || Predictions generated for 4000 timesteps and 100 ions with 5 step smoothing and 3 kernel size || 34 || 15832
