@@ -37,4 +37,4 @@ def main(retrain=True, validate=True):
     median_predictions()
 
 if __name__ == '__main__':
-    main(retrain=False, validate=True)
+    main(retrain=True, validate=False)
