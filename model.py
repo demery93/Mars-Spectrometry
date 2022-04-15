@@ -47,7 +47,7 @@ def cnn(timesteps, nions, kernel_width=3, input_smoothing=4):
 
     x = cbr(x_in, 64, kernel_width, 1, 1)
     x = tf.keras.layers.BatchNormalization()(x)
-    x = wave_block(x, 16, kernel_width, 12)
+    x = wave_block(x, 16, kernel_width, 8)
     x = tf.keras.layers.BatchNormalization()(x)
     x = wave_block(x, 32, kernel_width, 8)
     x = tf.keras.layers.BatchNormalization()(x)

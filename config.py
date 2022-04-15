@@ -7,7 +7,9 @@ class ParamConfig:
 
         #Each timestep/nion combination creates a model
         self.timesteps = [2000,3000,4000]
-        self.nions = [80,100,120]
+        self.nions = [80,100]
+        self.input_smoothing = [3, 4, 5]
+        self.kernel_width = [3]
 
         self.ensemble_method = ['mean']
 

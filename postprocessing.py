@@ -5,11 +5,13 @@ from config import config
 
 def average_predictions():
     subs = []
-    for timestep in config.timesteps:
-        for nion in config.nions:
-            sub = pd.read_csv(f"output/submission_{timestep}_{nion}.csv")
-            cols = [c for c in sub.columns[1:]]
-            subs.append(sub[cols].values)
+    for kernel_width in config.kernel_width:
+        for input_smoothing in config.input_smoothing:
+            for timesteps in config.timesteps:
+                for nion in config.nions:
+                    sub = pd.read_csv(f"output/submission_{timesteps}_{nion}_{input_smoothing}_{kernel_width}.csv")
+                    cols = [c for c in sub.columns[1:]]
+                    subs.append(sub[cols].values)
 
     out = sub.copy()
     out[cols] = np.mean(np.dstack(subs),axis=-1)
@@ -17,11 +19,13 @@ def average_predictions():
 
 def median_predictions():
     subs = []
-    for timestep in config.timesteps:
-        for nion in config.nions:
-            sub = pd.read_csv(f"output/submission_{timestep}_{nion}.csv")
-            cols = [c for c in sub.columns[1:]]
-            subs.append(sub[cols].values)
+    for kernel_width in config.kernel_width:
+        for input_smoothing in config.input_smoothing:
+            for timesteps in config.timesteps:
+                for nion in config.nions:
+                    sub = pd.read_csv(f"output/submission_{timesteps}_{nion}_{input_smoothing}_{kernel_width}.csv")
+                    cols = [c for c in sub.columns[1:]]
+                    subs.append(sub[cols].values)
 
     out = sub.copy()
     out[cols] = np.median(np.dstack(subs),axis=-1)
